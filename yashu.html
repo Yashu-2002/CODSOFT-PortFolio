@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+
+        }
+
+        body {
+            background-color: rgb(79, 79, 161);
+            color: white;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            height: 100px;
+            background-color: rgb(33, 33, 80);
+            align-items: center;
+
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 25px;
+
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+
+        }
+        
+        nav ul li a:hover {
+            color: rgb(225, 22, 140);
+            font-size: 1.4rem;
+        }
+        main hr {
+            border: 0;
+            background: rgb(128, 128, 176);
+            height: 1.9px;
+            margin: 35px 70px;
+
+
+        }
+
+
+        .left {
+            font-size: 1.5rem;
+            text-align: center;
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            margin: 80px 0;
+            align-items: center;
+        }
+
+        .firstsection>div {
+            width: 35%;
+        }
+
+        .leftsection {
+            font-size: 3rem;
+
+
+        }
+
+        .rightsection img {
+            width: 80%;
+            margin: 40px 0;
+
+        }
+
+        .yashu {
+            color: rgb(41, 5, 75);
+        }
+
+        #element {
+            color: rgb(14, 6, 21);
+        }
+
+        .secondsection {
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+        .secondsection h1{
+            font-size: 1.8rem;
+        }
+        .gray{
+            color: rgb(42, 9, 9);
+        }
+        .secondsection div{
+            background: white;
+            width: 80vw;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+           
+        }
+        .secondsection .vertical{
+            height: 90px;
+            width: 1px;
+            background-color: white;
+            margin: 0 100px
+            
+           
+        }
+        .image-top{
+            width: 20px;
+            position: relative;
+            top: -55px;
+            left: -9px;
+            height: 50px;
+        }
+        .vertical-title{
+
+            position: relative;
+            top: 35px;
+            width: 60px;
+            left: 50px;
+        }
+
+      .vertical-desc{
+        position: relative;
+        top: 130px;
+        color: gray;
+        width:60px;
+        font-size: 9px;
+
+      }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="left">Yashaswini B</div>
+
+
+
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="/">Project</a></li>
+                    <li><a href="/">Contant me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                Hi,My is<spam class="yashu">Yashaswini B</spam>
+                <div>and I am a passionate</div>
+                <span id="element"></span>
+            </div>
+            <div class="rightsection"><img src="yashu.webp" alt=""></div>
+        </section>
+        <hr>
+        <section class="secondsection">
+            <span class="gray">What i done so far</span>
+            
+            <h1>Work Experience</h1>
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="devaloper.png" alt="">
+                    <div class="vertical-title">
+                        HTML Developer [2010-2015]
+                    </div>
+                    <div class="vertical-desc"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis praesentium ullam dolorem dolorum? Sequi iste quod totam, possimus ducimus accusamus necessitatibus vel commodi aut suscipit asperiores a officiis excepturi maiores.</div>
+                </div>
+                <div class="vertical">
+                    Node.js Developer [2015-2018]
+                </div>
+                <div class="vertical"></div>
+                <div class="vertical"></div>
+            </div>
+        </section>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                var typed = new Typed('#element', {
+                    strings: ['Web developer', 'Graphic designer'], // Use 'strings' instead of 'string'
+                    typeSpeed: 50, // Use 'typeSpeed' instead of 'typespeed'
+                });
+            });
+        </script>
+    </main>
+</body>
+
+</html>
